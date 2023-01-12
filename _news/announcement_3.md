@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+date: 2021-08-21
 inline: true
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+Commenced a Ph.D. program in Computer Science at the University of Colorado - Boulder. 
