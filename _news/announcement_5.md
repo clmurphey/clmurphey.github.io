@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Poster accepted to SIAM Conference on Applications of Dynamical Systems (DS23) in May 2023
- 
 date: 2023-02-15
 inline: true
 ---
