@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://clmurphey.github.io/sitemap.xml
