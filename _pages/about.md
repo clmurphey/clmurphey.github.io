@@ -27,7 +27,7 @@ In my free time, I am an active church and choral musician, recovering competiti
 
 - Numerical methods & scientific computing
 - Non-linear dynamics
-- Computational fluid mechanics
+- Computational fluid dynamics
 - Elastomechanics
 - Time-series analysis
 
