@@ -6,4 +6,4 @@ inline: false
 ---
 Presented a poster entitled "An Experimentally Validated Model of Phonation-Induced Aerosolization" at the 41st Annual American Association for Aerosol Research (AAAR) Conference.
 
-<object data="{{ site.url }}{{ site.baseurl }}/assets/pdf/2023-10-AAAR.pdf" width="1000" height="1000" type='application/pdf'></object>
+[2023 AAAR Poster](../assets/pdf/2023-10-AAAR.pdf)
