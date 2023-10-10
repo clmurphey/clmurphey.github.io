@@ -35,6 +35,6 @@ In my free time, I am an active church and choral musician, recovering competiti
 ##### Professional Overview
 
 - M.S. Mechanical Engineering, Stanford '14
-- B.S.  Mechanical Engineering, Stanford '12
+- B.S. Mechanical Engineering, Stanford '12
 - Registered U.S. Patent Agent
 - Classical Lyric Soprano
