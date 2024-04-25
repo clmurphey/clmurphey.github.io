@@ -35,6 +35,7 @@ In my free time, I am an active church and choral musician, open water swimmer, 
 
 ##### Professional Overview
 
+- M.S. Computer Science, CU-Boulder '24
 - M.S. Mechanical Engineering, Stanford '14
 - B.S. Mechanical Engineering, Stanford '12
 - Registered U.S. Patent Agent
