@@ -3,7 +3,7 @@ layout: page
 permalink: /publications/
 title: publications
 description: Publications by categories in reversed chronological order. 
-years: [2023, 2020, 2019, 2018, 2016, 2013, 2011]
+years: [2024, 2023, 2020, 2019, 2018, 2016, 2013, 2011]
 nav: true
 nav_order: 3
 ---
