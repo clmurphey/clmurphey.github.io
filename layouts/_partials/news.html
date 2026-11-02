@@ -1,0 +1,18 @@
+<div class="news">
+  <div class="table-responsive" style="max-height: 100vw">
+    <table class="table table-sm table-borderless">
+      {{ range (where site.RegularPages "Section" "news").ByDate.Reverse }}
+      <tr>
+        <th scope="row">{{ if .Params.year_only }}{{ .Date.Format "2006" }}{{ else }}{{ .Date.Format "Jan 2006" }}{{ end }}</th>
+        <td>
+          {{ if .Params.inline }}
+          {{ .Content | replaceRE "</?p>" "" | safeHTML }}
+          {{ else }}
+          <a class="news-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+          {{ end }}
+        </td>
+      </tr>
+      {{ end }}
+    </table>
+  </div>
+</div>
