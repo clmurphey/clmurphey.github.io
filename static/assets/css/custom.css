@@ -1,12 +1,12 @@
 /* Site styles layered on top of the al-folio stylesheet in main.css */
 :root {
-  --global-bg-color: #fbfaf7;
+  --global-bg-color: #ffffff;
   --global-card-bg-color: #ffffff;
   --global-text-color: #2a2f33;
   --global-text-color-light: #646b70;
   --global-theme-color: #0b6478;
   --global-hover-color: #0b6478;
-  --global-divider-color: #d9d6cf;
+  --global-divider-color: #dcdfe3;
   --global-footer-text-color: #646b70;
   --global-footer-link-color: #0b6478;
 }
