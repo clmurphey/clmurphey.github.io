@@ -1,6 +1,7 @@
 ---
 layout: post
-date: 2026-01-02
+date: 2025-01-01
+year_only: true
 inline: true
 ---
 
