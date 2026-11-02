@@ -16,11 +16,11 @@ html[data-theme='dark'] {
   --global-card-bg-color: #1d2428;
   --global-text-color: #e4e6e5;
   --global-text-color-light: #a4abae;
-  --global-theme-color: #62c3d8;
-  --global-hover-color: #62c3d8;
+  --global-theme-color: #1a8fa3;
+  --global-hover-color: #1a8fa3;
   --global-divider-color: #363e43;
   --global-footer-text-color: #a4abae;
-  --global-footer-link-color: #62c3d8;
+  --global-footer-link-color: #1a8fa3;
 }
 
 body {
