@@ -24,7 +24,7 @@ html[data-theme='dark'] {
 }
 
 body {
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, sans-serif;
   font-size: 1.0625rem;
   line-height: 1.6;
   font-weight: 400;
@@ -33,7 +33,7 @@ body {
 h1, h2, h3, h4, h5, h6,
 .post-title,
 .card-title {
-  font-family: 'Source Serif 4', serif;
+  font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, sans-serif;
   font-weight: 600;
 }
 
@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .navbar.navbar-light .navbar-brand {
-  font-family: 'Source Serif 4', serif;
+  font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, sans-serif;
 }
 
 /* section headings: left aligned with an accent rule */
