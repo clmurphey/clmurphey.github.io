@@ -23,6 +23,8 @@ In a semi-recent past life, I worked as a mechanical engineer and registered U.S
 
 In my free time, I am an active church and choral musician, open water swimmer, amateur photographer (see [Projects]({% link _pages/projects.md %})), and proud Golden Retriever parent.
 
+I currently hold the open water swimming records for the North Channel (female), Lake Tahoe north-south, and the Lake Tahoe double. You can read more on my [swimming website](https://c-murph-swim.github.io/).
+
 ##### Research Interests
 
 - Numerical methods & scientific computing
