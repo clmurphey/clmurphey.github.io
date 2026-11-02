@@ -252,6 +252,8 @@ scholar:
   last_name: [Murphey]
   first_name: [Corey Lynn, Corey L., Corey]
   style: ieee
+  sort_by: year,month
+  order: descending
   locale: en
 
   source: /_bibliography/

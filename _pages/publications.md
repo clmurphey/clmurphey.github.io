@@ -8,7 +8,7 @@ nav_order: 3
 ---
 <!-- _pages/publications.md -->
 <div class="publications">
-<p>For presentations and the most up-to-date information, please refer to my <a href="{{ '/assets/pdf/CV_CLM.pdf' | relative_url }}">CV</a> or my <a href="https://scholar.google.com/citations?user=HKWLUxAAAAAJ">Google Scholar Profile</a>.</p>
+<p>For the most up-to-date information, please refer to my <a href="{{ '/assets/pdf/CV_CLM.pdf' | relative_url }}">CV</a> or my <a href="https://scholar.google.com/citations?user=HKWLUxAAAAAJ">Google Scholar Profile</a>.</p>
 
 <h2 class="year">journal articles</h2>
 {% bibliography -f papers -q @*[keywords=journal]* %}
@@ -21,4 +21,10 @@ nav_order: 3
 
 <h2 class="year">other publications</h2>
 {% bibliography -f papers -q @*[keywords=other]* %}
+
+<h2 class="year">talks</h2>
+{% bibliography -f papers -q @*[keywords=talk]* %}
+
+<h2 class="year">posters</h2>
+{% bibliography -f papers -q @*[keywords=poster]* %}
 </div>
