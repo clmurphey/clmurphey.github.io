@@ -1,0 +1,43 @@
+{{ define "main" }}
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ .Title }}</h1>
+  </header>
+  <article>
+    <div class="publications">
+      {{ .Content }}
+      {{ range site.Params.publication_sections }}
+      {{ $keyword := index . 0 }}
+      <h2 class="year">{{ index . 1 }}</h2>
+      <ol class="bibliography">
+        {{ range where hugo.Data.publications "keyword" $keyword }}
+        <li>
+          <div class="row">
+            <div class="col-sm-2 abbr"></div>
+            <div id="{{ .key }}" class="col-sm-8">
+              <div class="title">{{ .title }}</div>
+              <div class="author">
+                {{ $count := len .authors }}
+                {{ range $i, $a := .authors }}
+                  {{- if $i }}{{ if gt $count 2 }},{{ end }} {{ end -}}
+                  {{- if and $i (eq (add $i 1) $count) }}and {{ end -}}
+                  {{- if eq $a.last "Murphey" }}<em>{{ $a.first }} {{ $a.last }}</em>{{ else }}{{ $a.first }} {{ $a.last }}{{ end -}}
+                {{ end }}
+              </div>
+              <div class="periodical">{{ if .venue }}<em>{{ .venue }}</em>, {{ end }}{{ .date }}</div>
+              <div class="periodical">{{ .note }}</div>
+              <div class="links">
+                {{ if .abstract }}<a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>{{ end }}
+                {{ if .html }}<a href="{{ .html }}" class="btn btn-sm z-depth-0" role="button">HTML</a>{{ end }}
+              </div>
+              {{ if .abstract }}<div class="abstract hidden"><p>{{ .abstract }}</p></div>{{ end }}
+            </div>
+          </div>
+        </li>
+        {{ end }}
+      </ol>
+      {{ end }}
+    </div>
+  </article>
+</div>
+{{ end }}

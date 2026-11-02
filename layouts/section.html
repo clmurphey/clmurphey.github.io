@@ -1,0 +1,33 @@
+{{ define "main" }}
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ .Title }}</h1>
+  </header>
+  <article>
+    {{ if eq .Section "news" }}
+    {{ partial "news.html" . }}
+    {{ else }}
+    <div class="projects">
+      {{ .Content }}
+      <h2 class="category">photography</h2>
+      <div class="grid">
+        {{ range .RegularPages.ByParam "importance" }}
+        <div class="grid-sizer"></div>
+        <div class="grid-item">
+          <a href="{{ .RelPermalink }}">
+            <div class="card hoverable">
+              <img src="{{ .Params.img }}" class="img-fluid" alt="project thumbnail">
+              <div class="card-body">
+                <h2 class="card-title text-lowercase">{{ .Title }}</h2>
+                <p class="card-text">{{ .Params.description }}</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+  </article>
+</div>
+{{ end }}

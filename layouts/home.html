@@ -1,0 +1,29 @@
+{{ define "main" }}
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title"><span class="font-weight-bold">{{ site.Params.first_name }}</span> {{ site.Params.last_name }}</h1>
+  </header>
+  <article>
+    <div class="profile float-right">
+      <img src="/assets/img/prof_pic.jpg" class="img-fluid z-depth-1 rounded-circle" alt="Corey Lynn Murphey">
+      <div class="address">
+        <p>Doctoral Student</p>
+        <p>Computer Science</p>
+        <p>University of Colorado</p>
+      </div>
+    </div>
+    <div class="clearfix">{{ .Content }}</div>
+    <h2><a href="/news/" style="color: inherit;">News</a></h2>
+    {{ partial "news.html" . }}
+    <div class="social">
+      <div class="contact-icons">
+        <a href="mailto:{{ site.Params.email }}" title="email"><i class="fas fa-envelope"></i></a>
+        <a href="https://orcid.org/{{ site.Params.orcid }}" title="ORCID"><i class="ai ai-orcid"></i></a>
+        <a href="https://scholar.google.com/citations?user={{ site.Params.scholar }}" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+        <a href="https://github.com/{{ site.Params.github }}" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://gitlab.com/{{ site.Params.gitlab }}" title="GitLab"><i class="fab fa-gitlab"></i></a>
+      </div>
+    </div>
+  </article>
+</div>
+{{ end }}

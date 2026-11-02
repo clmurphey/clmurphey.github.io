@@ -1,0 +1,44 @@
+baseURL = "https://clmurphey.github.io/"
+languageCode = "en"
+title = "Corey Lynn Murphey"
+disableKinds = ["taxonomy", "term", "RSS"]
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[params]
+first_name = "Corey Lynn"
+last_name = "Murphey"
+description = "Corey Lynn Murphey's academic portfolio."
+email = "coreylynnmurphey@gmail.com"
+orcid = "0000-0002-7480-3303"
+scholar = "HKWLUxAAAAAJ"
+github = "clmurphey"
+gitlab = "corlmurphey"
+cv_pdf = "/assets/pdf/CV_CLM.pdf"
+# order of the sections on the publications page
+publication_sections = [
+  ["journal", "journal articles"],
+  ["conference", "reviewed conference papers"],
+  ["patent", "patents"],
+  ["other", "other publications"],
+  ["talk", "talks"],
+  ["poster", "posters"],
+]
+
+[[menus.main]]
+name = "about"
+url = "/"
+weight = 1
+[[menus.main]]
+name = "projects"
+url = "/projects/"
+weight = 2
+[[menus.main]]
+name = "publications"
+url = "/publications/"
+weight = 3
+[[menus.main]]
+name = "cv"
+url = "/cv/"
+weight = 4
