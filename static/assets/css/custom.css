@@ -50,10 +50,20 @@ h1, h2, h3, h4, h5, h6,
   font-family: 'Lato', sans-serif;
 }
 
+/* name and headings in the accent color */
+.post-title,
+.post-title span,
+article h2,
+article h5,
+.navbar.navbar-light .navbar-brand,
+.navbar.navbar-light .navbar-brand span {
+  color: var(--global-theme-color);
+}
+
 /* section headings: left aligned with an accent rule */
 .projects h2.category,
 .publications h2.year {
-  color: var(--global-text-color);
+  color: var(--global-theme-color);
   border-top: none;
   border-bottom: 2px solid var(--global-theme-color);
   padding: 0 0 0.35rem;
