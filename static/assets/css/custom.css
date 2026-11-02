@@ -1,0 +1,136 @@
+/* Site styles layered on top of the al-folio stylesheet in main.css */
+:root {
+  --global-bg-color: #fbfaf7;
+  --global-card-bg-color: #ffffff;
+  --global-text-color: #2a2f33;
+  --global-text-color-light: #646b70;
+  --global-theme-color: #0b6478;
+  --global-hover-color: #0b6478;
+  --global-divider-color: #d9d6cf;
+  --global-footer-text-color: #646b70;
+  --global-footer-link-color: #0b6478;
+}
+
+html[data-theme='dark'] {
+  --global-bg-color: #14191d;
+  --global-card-bg-color: #1d2428;
+  --global-text-color: #e4e6e5;
+  --global-text-color-light: #a4abae;
+  --global-theme-color: #62c3d8;
+  --global-hover-color: #62c3d8;
+  --global-divider-color: #363e43;
+  --global-footer-text-color: #a4abae;
+  --global-footer-link-color: #62c3d8;
+}
+
+body {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6,
+.post-title,
+.card-title {
+  font-family: 'Source Serif 4', serif;
+  font-weight: 600;
+}
+
+.post-title {
+  font-size: 2.5rem;
+}
+
+.navbar {
+  box-shadow: none;
+  opacity: 1;
+}
+
+.navbar.navbar-light .navbar-brand {
+  font-family: 'Source Serif 4', serif;
+}
+
+/* section headings: left aligned with an accent rule */
+.projects h2.category,
+.publications h2.year {
+  color: var(--global-text-color);
+  border-top: none;
+  border-bottom: 2px solid var(--global-theme-color);
+  padding: 0 0 0.35rem;
+  margin: 2.5rem 0 1.25rem;
+  font-size: 1.4rem;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+/* publications use the full page width */
+.publications ol.bibliography li {
+  margin-bottom: 1.25rem;
+}
+
+.publications ol.bibliography li .links a.btn {
+  border-color: var(--global-divider-color);
+  border-radius: 999px;
+  box-shadow: none;
+  margin-left: 0;
+}
+
+/* news dates in the accent color */
+.news th {
+  color: var(--global-theme-color) !important;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* cards and portrait */
+.card {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+  box-shadow: none;
+  overflow: hidden;
+}
+
+.card .card-text {
+  color: var(--global-text-color-light);
+}
+
+.profile img {
+  border-radius: 8px !important;
+  box-shadow: none !important;
+}
+
+.profile .address {
+  font-family: inherit;
+  font-size: 0.9rem;
+  color: var(--global-text-color-light);
+}
+
+.profile .address p {
+  color: inherit;
+}
+
+footer.sticky-bottom {
+  color: var(--global-footer-text-color);
+}
+
+footer.sticky-bottom .container {
+  color: inherit;
+}
+
+footer.sticky-bottom a {
+  color: var(--global-footer-link-color);
+}
+
+/* keep the portrait a modest size on phones */
+@media (max-width: 575px) {
+  .profile {
+    max-width: 220px;
+    margin: 0 auto 1rem;
+    float: none !important;
+  }
+
+  .profile .address p {
+    display: block;
+    text-align: center;
+  }
+}

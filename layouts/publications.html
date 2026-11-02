@@ -13,8 +13,7 @@
         {{ range where hugo.Data.publications "keyword" $keyword }}
         <li>
           <div class="row">
-            <div class="col-sm-2 abbr"></div>
-            <div id="{{ .key }}" class="col-sm-8">
+                        <div id="{{ .key }}" class="col-12">
               <div class="title">{{ .title }}</div>
               <div class="author">
                 {{ $count := len .authors }}
