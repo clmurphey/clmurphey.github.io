@@ -9,8 +9,8 @@ $(document).ready(function() {
   $grid.imagesLoaded().progress( function() {
     $grid.masonry('layout');
   });
-  // Layout Masonry again once the web font loads, since titles can change height
-  document.fonts.ready.then(function() {
+  // Layout Masonry again whenever a web font finishes loading, since titles can change height
+  document.fonts.addEventListener('loadingdone', function() {
     $grid.masonry('layout');
   });
 });
