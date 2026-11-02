@@ -50,11 +50,9 @@ h1, h2, h3, h4, h5, h6,
   font-family: 'Lato', sans-serif;
 }
 
-/* name and headings in the accent color */
+/* page titles and the name in the top bar use the accent color */
 .post-title,
 .post-title span,
-article h2,
-article h5,
 .navbar.navbar-light .navbar-brand,
 .navbar.navbar-light .navbar-brand span {
   color: var(--global-theme-color);
@@ -63,7 +61,7 @@ article h5,
 /* section headings: left aligned with an accent rule */
 .projects h2.category,
 .publications h2.year {
-  color: var(--global-theme-color);
+  color: var(--global-text-color);
   border-top: none;
   border-bottom: 2px solid var(--global-theme-color);
   padding: 0 0 0.35rem;
@@ -85,9 +83,8 @@ article h5,
   margin-left: 0;
 }
 
-/* news dates in the accent color */
+/* news dates */
 .news th {
-  color: var(--global-theme-color) !important;
   font-weight: 700;
   white-space: nowrap;
 }
